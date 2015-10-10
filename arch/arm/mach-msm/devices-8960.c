@@ -21,7 +21,6 @@
 #include <linux/avtimer.h>
 #include <asm/clkdev.h>
 #include <mach/kgsl.h>
-#include <linux/android_pmem.h>
 #include <mach/irqs-8960.h>
 #include <mach/dma.h>
 #include <linux/dma-mapping.h>
@@ -3481,7 +3480,7 @@ static struct kgsl_device_platform_data kgsl_3d0_pdata = {
 			.bus_freq = 0,
 		},
 	},
-	.init_level = 1,
+	.init_level = 2,
 	.num_levels = ARRAY_SIZE(grp3d_freq) + 1,
 	.set_grp_async = NULL,
 	.idle_timeout = HZ/12,
